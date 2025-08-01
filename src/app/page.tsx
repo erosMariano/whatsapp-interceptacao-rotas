@@ -1,12 +1,12 @@
+import ChatList from "@/components/organisms/ChatList";
 import React from "react";
 
 function Home() {
   return (
-    <>
-      {/* Aside */}
-      {/* List de chat */}
+    <div className="w-1/4 border-r border-white/10">
+      <ChatList />
       {/* Chat da conversa */}
-    </>
+    </div>
   );
 }
 
