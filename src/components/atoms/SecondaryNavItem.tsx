@@ -3,7 +3,6 @@
 import { useIsActivePath } from "@/hooks/useIsActivePath";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React from "react";
 
 interface SecondaryNavItemProps {

@@ -6,6 +6,7 @@ import Perfil from "@/assets/img/perfil.png";
 import ItemNavBar from "@/components/atoms/ItemNavbar";
 import PrimaryNavItem from "../atoms/PrimaryNavItem";
 import SecondaryNavItem from "../atoms/SecondaryNavItem";
+import LinkButtonWithIcon from "../atoms/LinkButtonWithIcon";
 
 function DefaultSidebar() {
   const styleItemNavBar = `my-0.5 block w-10 h-10 rounded-full transition hover:bg-active-links`;
@@ -29,12 +30,10 @@ function DefaultSidebar() {
       </div>
 
       <div className="flex flex-1 items-center flex-col justify-end">
-        <ItemNavBar
-          secondary={{
-            image: SettingsImage,
-            alt: "Settings",
-            url: "/settings",
-          }}
+        <SecondaryNavItem
+          alt="Settings"
+          image={SettingsImage}
+          url="/settings"
           className={`p-2 ${styleItemNavBar}`}
         />
 
