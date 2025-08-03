@@ -2,7 +2,7 @@ import { listChat } from "@/constants/listChat";
 import React from "react";
 import CardMessagePreview from "./CardMessagePreview";
 
-function ChatList() {
+function ChatSidebarList() {
   return (
     <div>
       {listChat.map((card) => (
@@ -14,4 +14,4 @@ function ChatList() {
   );
 }
 
-export default ChatList;
+export default ChatSidebarList;
