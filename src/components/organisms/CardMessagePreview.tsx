@@ -4,12 +4,14 @@ import { CardItem } from "@/@types/types";
 import LastSeen from "../atoms/LastSeen";
 import HeaderChatPreview from "../molecules/HeaderChatPreview";
 import MessageChatPreviewLine from "../molecules/MessageChatPreviewLine";
+import Link from "next/link";
 
 interface ChatCardMessageProps {
   card: CardItem;
 }
 function CardMessagePreview({ card }: ChatCardMessageProps) {
   const {
+    id,
     hasMessage,
     last_message,
     name,
@@ -19,7 +21,10 @@ function CardMessagePreview({ card }: ChatCardMessageProps) {
   } = card;
 
   return (
-    <div className="mx-2.5 transition hover:bg-active-links rounded-xl h-[72px] cursor-pointer flex items-center">
+    <Link
+      href={`/chat/${id}`}
+      className="mx-2.5 transition hover:bg-active-links rounded-xl h-[72px] cursor-pointer flex items-center"
+    >
       <Avatar alt={name} image={photo_url} />
 
       <div className="w-[calc(100%-84px)]">
@@ -34,7 +39,7 @@ function CardMessagePreview({ card }: ChatCardMessageProps) {
           />
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

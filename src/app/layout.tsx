@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import DefaultSidebar from "../components/organisms/DefaultSidebar";
+import ChatSidebarHeader from "@/components/organisms/ChatSidebarHeader";
+import ChatSidebarList from "@/components/organisms/ChatSidebarList";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +32,10 @@ export default function RootLayout({
       >
         <main className="flex">
           <DefaultSidebar />
+          <div className="w-sm border-r border-white/10">
+            <ChatSidebarHeader />
+            <ChatSidebarList />
+          </div>
           {children}
         </main>
       </body>
