@@ -16,7 +16,7 @@ function FooterChat() {
         </div>
       </div>
       <input
-        className="px-1.5 py-4 text-sm text-primary-strong bg-primary-background rounded-full w-full pl-11.5 outline-none border border-primary-background hover:shadow-inset-white-1px focus:shadow-inset-accent-2px"
+        className="pr-1.5 pl-24 py-4 text-sm text-primary-strong bg-primary-background rounded-full w-full outline-none border border-primary-background hover:shadow-inset-white-1px focus:shadow-inset-accent-2px"
         type="text"
       />
       <Image

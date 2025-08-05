@@ -22,6 +22,8 @@
   --color-nav-green-bg: #103529;
   --color-primary-black: #161717;
   --color-hover-light: rgba(255, 255, 255, 0.1);
+  --color-chat-secondary: #242626;
+  --color-chat-primary: #144d37;
   --shadow-inset-white-1px: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
   --shadow-inset-accent-2px: inset 0 0 0 2px #21c063;
 }
